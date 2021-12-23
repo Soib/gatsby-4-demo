@@ -18,7 +18,7 @@ export default function BlogPostTemplate({ data, pageContext }) {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <Link to={`/blog/${pageContext.slug}`}>SSG version</Link>
+        <Link to={`/blog/${pageContext.slug}`}>Test SSG version</Link>
 
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
